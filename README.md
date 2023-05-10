@@ -50,6 +50,10 @@
 
 `$ python Operator\MassDM.py members.csv`
 
+* Add Members To Your Group
+
+`$ python Operator\Adder.py members.csv`
+
 * Update Tool
 
 `$ python Operator\Setup.py -u`
