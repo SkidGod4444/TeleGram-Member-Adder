@@ -29,27 +29,27 @@
 
 `$ pkg install -y git python`
 
-`$ git clone https://github.com/th3unkn0n/TeleGram-Scraper.git`
+`$ git clone https://github.com/SkidGod4444/TeleGram-Member-Adder`
 
-`$ cd TeleGram-Scraper`
+`$ cd TeleGram-Member-Adder`
 
 * Install requierments
 
-`$ python setup.py -i`
+`$ python Setup.py -i`
 
 * setup configration file ( apiID, apiHASH )
 
-`$ python setup.py -c`
+`$ python Setup.py -c`
 
 * To Genrate User Data
 
-`$ python scraper.py`
+`$ python Scraper.py`
 
 * ( members.csv is default if you changed name use it )
 * Send Bulk sms To Collected Data 
 
-`$ python smsbot.py members.csv`
+`$ python MassDM.py members.csv`
 
 * Update Tool
 
-`$ python setup.py -u`
+`$ python Setup.py -u`
