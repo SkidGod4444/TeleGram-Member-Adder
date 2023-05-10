@@ -35,21 +35,21 @@
 
 * Install requierments
 
-`$ python Setup.py -i`
+`$ python Operator\Setup.py -i`
 
 * setup configration file ( apiID, apiHASH )
 
-`$ python Setup.py -c`
+`$ python Operator\Setup.py -c`
 
 * To Genrate User Data
 
-`$ python Scraper.py`
+`$ python Operator\Scraper.py`
 
 * ( members.csv is default if you changed name use it )
 * Send Bulk sms To Collected Data 
 
-`$ python MassDM.py members.csv`
+`$ python Operator\MassDM.py members.csv`
 
 * Update Tool
 
-`$ python Setup.py -u`
+`$ python Operator\Setup.py -u`
