@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/.image/20191203_205322.jpg" width="470" height="150">
+  <img src="https://github.com/SkidGod4444/TeleGram-Member-Adder/blob/master/Settings/Images/telegram.jpg" width="470" height="150">
 </p>
 
-<p align="center"><img src="https://img.shields.io/badge/Version-3.1-brightgreen"></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-2.1.0.1-brightgreen"></p>
 <p align="center">
   <a href="https://github.com/th3unkn0n">
-    <img src="https://img.shields.io/github/followers/th3unkn0n?label=Follow&style=social">
+    <img src="https://img.shields.io/github/followers/SkidGod4444?label=Follow&style=social">
   </a>
-  <a href="https://github.com/th3unkn0n/TeleGram-Group-Scraper">
-    <img src="https://img.shields.io/github/stars/th3unkn0n/TeleGram-Group-Scraper?style=social">
+  <a href="https://github.com/SkidGod4444/TeleGram-Member-Adder">
+    <img src="https://img.shields.io/github/stars/SkidGod4444/TeleGram-Member-Adder?style=social">
   </a>
 </p>
 <p align="center">
-  Telegram Group Scrapper
+  Telegram Member Adder 
 </p>
 <p align="center">
 </p>
