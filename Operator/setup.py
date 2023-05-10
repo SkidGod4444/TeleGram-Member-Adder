@@ -1,5 +1,5 @@
 #!/bin/env python
-# code by : youtube.com/theunknon
+# code by : youtube.com/@skidgod4444
 
 """
 
