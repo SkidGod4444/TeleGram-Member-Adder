@@ -30,7 +30,7 @@ def requirements():
 		banner()
 		print(gr+'['+cy+'+'+gr+']'+cy+' this may take some time ...')
 		os.system("""
-			pip3 install cython numpy pandas
+			pip install cython numpy pandas
 			python -m pip install cython numpy pandas
 			""")
 	banner()
@@ -42,7 +42,7 @@ def requirements():
 		pass
 	print(gr+"[+] Installing requierments ...")
 	os.system("""
-		pip3 install telethon requests configparser
+		pip install telethon requests configparser
 		python -m pip install telethon requests configparser
 		touch config.data
 		""")
@@ -81,18 +81,18 @@ def merge_csv():
 def update_tool():
 	import requests as r
 	banner()
-	source = r.get("https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/.image/.version")
-	if source.text == '3':
-		print(gr+'['+cy+'+'+gr+']'+cy+' alredy latest version')
+	source = r.get("https://github.com/SkidGod4444/TeleGram-Member-Adder/blob/master/Settings/version")
+	if source.text == '2.1.0.1':
+		print(gr+'['+cy+'+'+gr+']'+cy+' loaded version 2.1.0.1 !\n')
 	else:
 		print(gr+'['+cy+'+'+gr+']'+cy+' removing old files ...')
 		os.system('rm *.py');time.sleep(3)
 		print(gr+'['+cy+'+'+gr+']'+cy+' getting latest files ...')
 		os.system("""
-			curl -s -O https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/Adder.py
-			curl -s -O https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/scraper.py
-			curl -s -O https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/setup.py
-			curl -s -O https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/smsbot.py
+			curl -s -O https://github.com/SkidGod4444/TeleGram-Member-Adder/blob/master/Operator/Adder.py
+			curl -s -O https://github.com/SkidGod4444/TeleGram-Member-Adder/blob/master/Operator/MassDM.py
+			curl -s -O https://github.com/SkidGod4444/TeleGram-Member-Adder/blob/master/Operator/Scrapper.py
+			curl -s -O https://github.com/SkidGod4444/TeleGram-Member-Adder/blob/master/Operator/Setup.py
 			chmod 777 *.py
 			""");time.sleep(3)
 		print(gr+'\n['+cy+'+'+gr+']'+cy+' update compled.\n')
