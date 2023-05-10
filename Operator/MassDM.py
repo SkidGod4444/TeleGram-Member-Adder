@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/bin/env python
 from telethon.sync import TelegramClient
 from telethon.tl.types import InputPeerUser
 from telethon.errors.rpcerrorlist import PeerFloodError
@@ -18,12 +18,15 @@ class main():
     def banner():
         
         print(f"""
-    {re}╔╦╗{cy}┌─┐┬  ┌─┐{re}╔═╗  ╔═╗{cy}┌─┐┬─┐┌─┐┌─┐┌─┐┬─┐
-    {re} ║ {cy}├┤ │  ├┤ {re}║ ╦  ╚═╗{cy}│  ├┬┘├─┤├─┘├┤ ├┬┘
-    {re} ╩ {cy}└─┘┴─┘└─┘{re}╚═╝  ╚═╝{cy}└─┘┴└─┴ ┴┴  └─┘┴└─
+{re} ___  _  _  ____  ____  {cy}  ___  _____  ____    
+{re}/ __)( )/ )(_  _)(  _ \ {cy} / __)(  _  )(  _ \   
+{re}\__ \ )  (  _)(_  )(_) ){cy}( (_-. )(_)(  )(_) )  
+{re}(___/(_)\_)(____)(____/ {cy} \___/(_____)(____/   
 
-                version : 3.1
-    youtube.com/channel/UCnknCgg_3pVXS27ThLpw3xQ
+            version : 2.1.0.1
+    https://youtube.com/@skidgod4444/
+    https://github.com/SkidGod4444/
+    https://discord.gg/sputnik
             """)
 
     def send_sms():
@@ -36,7 +39,7 @@ class main():
         except KeyError:
             os.system('clear')
             main.banner()
-            print(re+"[!] run python3 setup.py first !!\n")
+            print(re+"[!] run python setup.py first !!\n")
             sys.exit(1)
 
         client = TelegramClient(phone, api_id, api_hash)

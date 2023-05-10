@@ -31,7 +31,7 @@ try:
 except KeyError:
     os.system('clear')
     banner()
-    print(re+"[!] run python3 setup.py first !!\n")
+    print(re+"[!] run python setup.py first !!\n")
     sys.exit(1)
 
 client.connect()

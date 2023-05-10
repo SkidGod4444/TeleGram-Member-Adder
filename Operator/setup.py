@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/bin/env python
 # code by : youtube.com/theunknon
 
 """
@@ -17,9 +17,12 @@ import time
 def banner():
 	os.system('clear')
 	print(f"""
-	{re}╔═╗{cy}┌─┐┌┬┐┬ ┬┌─┐
-	{re}╚═╗{cy}├┤  │ │ │├─┘
-	{re}╚═╝{cy}└─┘ ┴ └─┘┴
+
+{re} ___  ____  ____  ____  ____  _  _  ___   {gr} ____  _____  _____  __   
+{re}/ __)( ___)(_  _)(_  _)(_  _)( \( )/ __)  {gr}(_  _)(  _  )(  _  )(  )  
+{re}\__ \ )__)   )(    )(   _)(_  )  (( (_-.  {gr}  )(   )(_)(  )(_)(  )(__ 
+{re}(___/(____) (__)  (__) (____)(_)\_)\___/  {gr} (__) (_____)(_____)(____)
+
 	""")
 
 def requirements():
@@ -28,7 +31,7 @@ def requirements():
 		print(gr+'['+cy+'+'+gr+']'+cy+' this may take some time ...')
 		os.system("""
 			pip3 install cython numpy pandas
-			python3 -m pip install cython numpy pandas
+			python -m pip install cython numpy pandas
 			""")
 	banner()
 	print(gr+'['+cy+'+'+gr+']'+cy+' it will take upto 10 min to install csv merge.')
@@ -40,7 +43,7 @@ def requirements():
 	print(gr+"[+] Installing requierments ...")
 	os.system("""
 		pip3 install telethon requests configparser
-		python3 -m pip install telethon requests configparser
+		python -m pip install telethon requests configparser
 		touch config.data
 		""")
 	banner()
@@ -108,7 +111,7 @@ try:
 		requirements()
 	elif any ([sys.argv[1] == '--help', sys.argv[1] == '-h']):
 		banner()
-		print("""$ python3 setup.py -m file1.csv file2.csv
+		print("""$ python setup.py -m file1.csv file2.csv
 			
 	( --config  / -c ) setup api configration
 	( --merge   / -m ) merge 2 .csv files in one 
@@ -119,9 +122,9 @@ try:
 	else:
 		print('\n'+gr+'['+re+'!'+gr+']'+cy+' unknown argument : '+ sys.argv[1])
 		print(gr+'['+re+'!'+gr+']'+cy+' for help use : ')
-		print(gr+'$ python3 setup.py -h'+'\n')
+		print(gr+'$ python setup.py -h'+'\n')
 except IndexError:
 	print('\n'+gr+'['+re+'!'+gr+']'+cy+' no argument given : '+ sys.argv[1])
 	print(gr+'['+re+'!'+gr+']'+cy+' for help use : ')
 	print(gr+'['+re+'!'+gr+']'+cy+' https://github.com/th3unkn0n/TeleGram-Scraper#-how-to-install-and-use')
-	print(gr+'$ python3 setup.py -h'+'\n')
+	print(gr+'$ python setup.py -h'+'\n')

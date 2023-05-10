@@ -17,12 +17,16 @@ cy="\033[1;36m"
 
 def banner():
     print(f"""
-{re}╔╦╗{cy}┌─┐┬  ┌─┐{re}╔═╗  ╔═╗{cy}┌─┐┬─┐┌─┐┌─┐┌─┐┬─┐
-{re} ║ {cy}├┤ │  ├┤ {re}║ ╦  ╚═╗{cy}│  ├┬┘├─┤├─┘├┤ ├┬┘
-{re} ╩ {cy}└─┘┴─┘└─┘{re}╚═╝  ╚═╝{cy}└─┘┴└─┴ ┴┴  └─┘┴└─
+{re} ___  _  _  ____  ____  {cy}  ___  _____  ____    
+{re}/ __)( )/ )(_  _)(  _ \ {cy} / __)(  _  )(  _ \   
+{re}\__ \ )  (  _)(_  )(_) ){cy}( (_-. )(_)(  )(_) )  
+{re}(___/(_)\_)(____)(____/ {cy} \___/(_____)(____/   
 
-            version : 1.0
-        """)
+            version : 2.1.0.1
+    https://youtube.com/@skidgod4444/
+    https://github.com/SkidGod4444/
+    https://discord.gg/sputnik
+    """)
 
 cpass = configparser.RawConfigParser()
 cpass.read('config.data')
@@ -35,7 +39,7 @@ try:
 except KeyError:
     os.system('clear')
     banner()
-    print(re+"[!] run python3 setup.py first !!\n")
+    print(re+"[!] run python setup.py first !!\n")
     sys.exit(1)
 
 client.connect()
