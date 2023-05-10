@@ -43,7 +43,7 @@
 
 * To Genrate User Data
 
-`$ python Operator\Scraper.py`
+`$ python Operator\Scrapper.py`
 
 * ( members.csv is default if you changed name use it )
 * Send Bulk sms To Collected Data 
